@@ -1,0 +1,62 @@
+.skillsSection{
+    background: $blackBackground;
+    color: #ffffff;
+    padding: 160px 0 140px;
+
+    .wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
+.sectionTitleContainer{
+    text-align: center;
+
+    .sectionTitle{
+        font-size: 3.6rem;
+        font-weight: 700;
+    }
+    .sectionSubtitle{
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+}
+
+.skillsContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+
+    .skillCard{
+        flex: 0 1 220px;
+        margin: 35px;
+        text-align: center;
+        padding: 30px 10px;
+        
+        
+        &:hover{
+            background: $white;
+            border-radius: 10px;
+            transition: all 0.5s;
+            transform: scale(1.1);
+
+            .skillsTitle{
+                color: black;
+            }
+        }
+        
+        &:hover .fab, &:hover .fas{
+            color: rgb(255, 206, 56);
+        }
+
+        .fab, .fas{
+            font-size: 12rem;
+        }
+
+        .skillsTitle{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+}

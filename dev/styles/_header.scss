@@ -1,0 +1,24 @@
+header{
+    background-color: $blackBackground;
+    font-style: $primary-font;
+    .headerImgContainer{
+        margin: 0 auto;
+        bottom: -180px;
+        position: relative;
+        width: 415px;
+        height: 362px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #colorCircles{
+            width: 415px;
+            position: absolute;
+        }
+        #headshot{
+            width: 250px;
+            z-index: 999;
+        }
+
+    }
+}
