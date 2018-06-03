@@ -1,15 +1,21 @@
 header{
     background-color: $blackBackground;
     font-style: $primary-font;
+    height: 500px;
+    position: relative;
+
     .headerImgContainer{
-        margin: 0 auto;
         bottom: -180px;
-        position: relative;
+        position: absolute;
         width: 415px;
         height: 362px;
         display: flex;
         justify-content: center;
         align-items: center;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
 
         #colorCircles{
             width: 415px;

@@ -10,8 +10,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header>
+	<header id="particles-js">
 		<div class="wrapper">
+			<nav class="navbar">
+				<span class="open-slide">
+					<a href="#" onclick="openSlideMenu()">
+						<svg width="30" height="30">
+							<path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+							<path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+							<path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+						</svg>
+					</a>
+				</span>
+			
+				<ul class="navbar-nav">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Services</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+
+				<a href="#contact" class="button">Contact me</a>
+			</nav>
+			
+			<div id="side-menu" class="side-nav">
+				<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Services</a>
+				<a href="#">Contact</a>
+			</div>
 			<div class="headerImgContainer">
 				<img id='colorCircles' src="./public/assets/colorCircles.png" alt="colorful circles">
 				<img id='headshot' src="./public/assets/Polygon.png" alt="picture of sandy tian">
@@ -250,10 +286,9 @@
 						<label>Phone No</label>
 					</div>
 					<div class="group">
-						<textarea name="message" id="message" rows="1" class="autoExpand"></textarea>
+						<textarea name="message" id="message" rows="1" class="autoExpand" placeholder="Message"></textarea>
 						<span class="highlight"></span>
 						<span class="bar"></span>
-						<label>Message</label>
 					</div>
 					<button class="button">contact now</button>
 				</form>
@@ -315,9 +350,37 @@
 		</div>
 	</section>
 
+<!-- footer section -->
+	<footer>
+		<div class="copyRight">
+			<p>Copyright © 2018 by Sandy Tian</p>
+		</div>
+	</footer>
+
 
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script src="/public/scripts/app.js"></script>
+
+<script>
+	particlesJS.load('particles-js', 'particles.json', function () {
+		console.log('callback - particles.js config loaded');
+	});
+</script>
+
+<script>
+	function openSlideMenu() {
+		document.getElementById('side-menu').style.width = '250px';
+		document.querySelector('nav').style.display = 'none';
+		// document.getElementById('main').style.marginLeft = '250px';
+	}
+
+	function closeSlideMenu() {
+		document.getElementById('side-menu').style.width = '0';
+		document.querySelector('nav').style.display = 'block';
+		// document.getElementById('main').style.marginLeft = '0';
+	}
+</script>
 
 
 </body>
