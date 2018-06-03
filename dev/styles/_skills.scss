@@ -36,18 +36,34 @@
         
         
         &:hover{
-            background: $white;
             border-radius: 10px;
             transition: all 0.5s;
-            transform: scale(1.1);
-
-            .skillsTitle{
-                color: black;
-            }
+            transform: scale(1.5);
         }
         
-        &:hover .fab, &:hover .fas{
-            color: rgb(255, 206, 56);
+        &:hover .fa-react{
+            color: #892582;
+        }
+        &:hover .fa-js{
+            color: #f86b18;
+        }
+        &:hover .fa-html5{
+            color: #0095c8;
+        }
+        &:hover .fa-css3-alt{
+            color: #97ca85;
+        }
+        &:hover .fa-code-branch{
+            color: #872480;
+        }
+        &:hover .fa-github{
+            color: #f7bdc6;
+        }
+        &:hover .fa-sass{
+            color: #0095c8;
+        }
+        &:hover .fa-gulp{
+            color: #f5b211;
         }
 
         .fab, .fas{
