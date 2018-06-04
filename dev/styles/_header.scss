@@ -7,7 +7,7 @@ header{
     .headerImgContainer{
         bottom: -180px;
         position: absolute;
-        width: 415px;
+        max-width: 415px;
         height: 362px;
         display: flex;
         justify-content: center;
@@ -16,6 +16,7 @@ header{
         right: 0;
         margin-right: auto;
         margin-left: auto;
+        overflow: hidden;
 
         #colorCircles{
             width: 415px;
@@ -23,8 +24,14 @@ header{
         }
         #headshot{
             width: 250px;
-            z-index: 999;
+            z-index: 10;
         }
 
     }
+}
+
+#particles-js{
+    height: 500px;
+    width: 100vw;
+    position: absolute;
 }

@@ -10,31 +10,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header id="particles-js">
+	<header id="home">
+		<div id="particles-js"></div>
 		<div class="wrapper">
 			<nav class="navbar">
 				<span class="open-slide">
-					<a href="#" onclick="openSlideMenu()">
-						<svg width="30" height="30">
-							<path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-							<path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-							<path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-						</svg>
+					<a href="javascript:;" onclick="openSlideMenu()">
+						<i class="fas fa-bars"></i>
 					</a>
 				</span>
 			
 				<ul class="navbar-nav">
 					<li>
-						<a href="#">Home</a>
+						<a href="#home">Home</a>
 					</li>
 					<li>
-						<a href="#">About</a>
+						<a href="#skills">Skills</a>
 					</li>
 					<li>
-						<a href="#">Services</a>
+						<a href="#work">Portfolio</a>
 					</li>
 					<li>
-						<a href="#">Contact</a>
+						<a href="#blog">Blog</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
 					</li>
 				</ul>
 
@@ -42,11 +42,12 @@
 			</nav>
 			
 			<div id="side-menu" class="side-nav">
-				<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Services</a>
-				<a href="#">Contact</a>
+				<a href="javascript:;" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+				<a href="#home" onclick="closeSlideMenu()">Home</a>
+				<a href="#skills" onclick="closeSlideMenu()">Skills</a>
+				<a href="#work" onclick="closeSlideMenu()">Portfolio</a>
+				<a href="#blog" onclick="closeSlideMenu()">Blog</a>
+				<a href="#contact" onclick="closeSlideMenu()">Contact</a>
 			</div>
 			<div class="headerImgContainer">
 				<img id='colorCircles' src="./public/assets/colorCircles.png" alt="colorful circles">
@@ -75,7 +76,7 @@
 	</section>
 
 <!-- skill section -->
-	<section class="skillsSection">
+	<section class="skillsSection" id="skills">
 		<div class="wrapper">
 			<div class="sectionTitleContainer">
 				<h1 class="sectionTitle">My Skills</h1>
@@ -83,44 +84,48 @@
 			</div>
 
 			<div class="skillsContainer">
-				<div class="skillCard">
-					<i class="fab fa-react"></i>
-					<p class="skillsTitle">React</p>
+				<div class="skillRow">
+					<div class="skillCard">
+						<i class="fab fa-react"></i>
+						<p class="skillsTitle">React</p>
+					</div>
+					<div class="skillCard">
+						<i class="fab fa-js"></i>
+						<p class="skillsTitle">JavaScript</p>
+					</div>
+					<div class="skillCard">
+						<i class="fab fa-html5"></i>
+						<p class="skillsTitle">HTML5</p>
+					</div>
+					<div class="skillCard">
+						<i class="fab fa-css3-alt"></i>
+						<p class="skillsTitle">CSS3</p>
+					</div>
 				</div>
-				<div class="skillCard">
-					<i class="fab fa-js"></i>
-					<p class="skillsTitle">JavaScript</p>
-				</div>
-				<div class="skillCard">
-					<i class="fab fa-html5"></i>
-					<p class="skillsTitle">HTML5</p>
-				</div>
-				<div class="skillCard">
-					<i class="fab fa-css3-alt"></i>
-					<p class="skillsTitle">CSS3</p>
-				</div>
-				<div class="skillCard">
-					<i class="fas fa-code-branch"></i>
-					<p class="skillsTitle">Git</p>
-				</div>
-				<div class="skillCard">
-					<i class="fab fa-github"></i>
-					<p class="skillsTitle">GitHub</p>
-				</div>
-				<div class="skillCard">
-					<i class="fab fa-sass"></i>
-					<p class="skillsTitle">Sass</p>
-				</div>
-				<div class="skillCard">
-					<i class="fab fa-gulp"></i>
-					<p class="skillsTitle">Gulp</p>
+				<div class="skillRow">
+					<div class="skillCard">
+						<i class="fas fa-code-branch"></i>
+						<p class="skillsTitle">Git</p>
+					</div>
+					<div class="skillCard">
+						<i class="fab fa-github"></i>
+						<p class="skillsTitle">GitHub</p>
+					</div>
+					<div class="skillCard">
+						<i class="fab fa-sass"></i>
+						<p class="skillsTitle">Sass</p>
+					</div>
+					<div class="skillCard">
+						<i class="fab fa-gulp"></i>
+						<p class="skillsTitle">Gulp</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 <!-- portfolio section -->
-	<section class="portfolioSection">
+	<section class="portfolioSection" id="work">
 		<div class="wrapper">
 			<div class="sectionTitleContainer">
 				<h1 class="sectionTitle">My Projects</h1>
@@ -205,7 +210,7 @@
 
 
 <!-- article section -->
-	<section class="article">
+	<section class="article" id="blog">
 		<div class="wrapper">
 			<div class="sectionTitleContainer">
 				<h1 class="sectionTitle">My Articles</h1>
@@ -257,7 +262,7 @@
 
 
 <!-- contact section -->
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="wrapper">
 			<div class="contactForm">
 				<div class="contactContent">
@@ -266,27 +271,27 @@
 						<p class="sectionSubtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 					</div>
 				</div>
-				<form action="">
+				<form action="http://www.focuspocus.io/magic/328c8ab775bf3e4ebcc702f29ad4e948" method="POST">
 					<div class="group">
-						<input type="text" required>
+						<input type="text" name="name" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Full name</label>
 					</div>
 					<div class="group">
-						<input type="text" required>
+						<input type="text" name="email" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Email Address</label>
 					</div>
 					<div class="group">
-						<input type="text" required>
+						<input type="text" name="phone" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Phone No</label>
 					</div>
 					<div class="group">
-						<textarea name="message" id="message" rows="1" class="autoExpand" placeholder="Message"></textarea>
+						<textarea name="message" name="message" id="message" rows="1" class="autoExpand" placeholder="Message"></textarea>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 					</div>
@@ -369,16 +374,17 @@
 </script>
 
 <script>
+
 	function openSlideMenu() {
-		document.getElementById('side-menu').style.width = '250px';
+		document.getElementById('side-menu').style.width = '100vw';
 		document.querySelector('nav').style.display = 'none';
-		// document.getElementById('main').style.marginLeft = '250px';
 	}
 
 	function closeSlideMenu() {
 		document.getElementById('side-menu').style.width = '0';
-		document.querySelector('nav').style.display = 'block';
-		// document.getElementById('main').style.marginLeft = '0';
+		document.querySelector('nav').style.display = 'flex';
+		document.querySelector('nav').style.justifyContent = 'flex-start';
+		document.querySelector('nav').style.position = 'fixed';
 	}
 </script>
 

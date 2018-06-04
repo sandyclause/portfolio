@@ -135,11 +135,12 @@
         margin: 0 auto;
         bottom: 0px;
         position: relative;
-        width: 415px;
+        max-width: 415px;
         height: 362px;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         #colorCircles{
             width: 415px;

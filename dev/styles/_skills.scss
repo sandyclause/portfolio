@@ -4,8 +4,8 @@
     padding: 160px 0 140px;
 
     .wrapper{
-        display: flex;
-        flex-flow: column nowrap;
+        // display: flex;
+        // flex-flow: column nowrap;
     }
 }
 
@@ -24,12 +24,16 @@
 
 .skillsContainer{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
     padding-top: 50px;
+    
+    .skillRow{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
 
     .skillCard{
-        flex: 0 1 220px;
         margin: 35px;
         text-align: center;
         padding: 30px 10px;
@@ -67,7 +71,7 @@
         }
 
         .fab, .fas{
-            font-size: 12rem;
+            font-size: 8vw;
         }
 
         .skillsTitle{
