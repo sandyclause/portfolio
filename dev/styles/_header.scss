@@ -1,7 +1,7 @@
 header{
     background-color: $blackBackground;
     font-style: $primary-font;
-    height: 500px;
+    height: 50vh;
     position: relative;
 
     .headerImgContainer{
@@ -31,7 +31,13 @@ header{
 }
 
 #particles-js{
-    height: 500px;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     position: absolute;
+}
+
+@media(max-width: 900px){
+    header{
+        height: 45vh;
+    }
 }

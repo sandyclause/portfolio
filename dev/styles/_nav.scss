@@ -89,7 +89,7 @@
     color:#ccc;
     display:block;
     transition:0.3s;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .side-nav a:hover{
@@ -131,6 +131,9 @@
 
 @media(min-width:900px){
     .open-slide{
-        display:none !important;
+        display: none !important;
+    }
+    .btn-close{
+        display: none !important;
     }
 }

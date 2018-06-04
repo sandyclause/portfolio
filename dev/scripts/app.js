@@ -1,3 +1,4 @@
+import {openSlideMenu, closeSlideMenu, navOpenClose} from './navHandler.js';
 // Applied globally on all textareas with the "autoExpand" class
 $(document)
     .one('focus.autoExpand', 'textarea.autoExpand', function () {
@@ -13,6 +14,7 @@ $(document)
         this.rows = minRows + rows;
 
 });
+
 
 $(document).ready(function(){
     // Select all links with hashes
@@ -53,3 +55,4 @@ $(document).ready(function(){
         });
 });
 
+navOpenClose();

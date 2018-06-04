@@ -15,7 +15,7 @@
 		<div class="wrapper">
 			<nav class="navbar">
 				<span class="open-slide">
-					<a href="javascript:;" onclick="openSlideMenu()">
+					<a href="#">
 						<i class="fas fa-bars"></i>
 					</a>
 				</span>
@@ -42,16 +42,16 @@
 			</nav>
 			
 			<div id="side-menu" class="side-nav">
-				<a href="javascript:;" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-				<a href="#home" onclick="closeSlideMenu()">Home</a>
-				<a href="#skills" onclick="closeSlideMenu()">Skills</a>
-				<a href="#work" onclick="closeSlideMenu()">Portfolio</a>
-				<a href="#blog" onclick="closeSlideMenu()">Blog</a>
-				<a href="#contact" onclick="closeSlideMenu()">Contact</a>
+				<a href="#" class="btn-close" >&times;</a>
+				<a href="#home" class="link">Home</a>
+				<a href="#skills" class="link">Skills</a>
+				<a href="#work" class="link">Portfolio</a>
+				<a href="#blog" class="link">Blog</a>
+				<a href="#contact" class="link">Contact</a>
 			</div>
 			<div class="headerImgContainer">
 				<img id='colorCircles' src="./public/assets/colorCircles.png" alt="colorful circles">
-				<img id='headshot' src="./public/assets/Polygon.png" alt="picture of sandy tian">
+				<img id='headshot' src="./public/assets/PolygonWithPhoto.png" alt="picture of sandy tian">
 			</div>
 		</div>
 	</header>
@@ -60,7 +60,7 @@
 	<section class="intro">
 		<div class="introContainer">
 			<h1>Hello, I'm Sandy Tian</h1>
-			<h2>Font-End Web Developer</h2>
+			<h2>Front-End Web Developer</h2>
 			<p>And I am afraid of spaces. adipisicing elit. Voluptatem ut cum amet quis sed blanditiis nobis modi. Ducimus!</p>
 		</div>
 	
@@ -135,8 +135,8 @@
 				<div class="leftGroup">
 					<div class="work">
 						<div class="workImg">
-							<a href="https://placeholder.com">
-								<img src="http://via.placeholder.com/540x440">
+							<a href="https://comicproject-b8126.firebaseapp.com/" target="_blank">
+								<img src="./public/assets/comicCloud.png">
 							</a>
 						</div>
 						<div class="workDescription">
@@ -146,8 +146,8 @@
 					</div>
 					<div class="work">
 						<div class="workImg">
-							<a href="https://placeholder.com">
-								<img src="http://via.placeholder.com/540x440">
+							<a href="http://sandytian.ca/weekendplanner/" target="_blank">
+								<img src="./public/assets/weekendPlanner.png">
 							</a>
 						</div>
 						<div class="workDescription">
@@ -217,10 +217,10 @@
 				<p class="sectionSubtitle">Check out my most recent articles on Medium.</p>
 			</div>
 			<div class="articleContainer">
-				<div class="articleCard">
+				<article class="articleCard">
 					<div class="articleImg">
-						<a href="https://placeholder.com">
-							<img src="http://via.placeholder.com/370x220">
+						<a href="https://medium.com/@sandytian3000/cool-css-tree-list-effect-tutorial-d341b836abcd" target="_blank">
+							<img src="./public/assets/treeBlog.png">
 						</a>
 						<p class="articleDate">April 23, 2018</p>
 					</div>
@@ -228,11 +228,11 @@
 						<p class="articleTitle">CSS Tree List Effect Tutorial</p>
 						<p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, libero est debitis vitae ea provident cumque voluptatem eius aliquam vero ducimus aperiam tempore perferendis obcaecati esse consectetur quisquam quam nobis!</p>
 					</div>
-				</div>
-				<div class="articleCard">
+				</article>
+				<article class="articleCard">
 					<div class="articleImg">
-						<a href="https://placeholder.com">
-							<img src="http://via.placeholder.com/370x220">
+						<a href="https://medium.com/@sandytian3000/guide-to-flexbox-limbo-83e18bb03a88" target="_blank">
+							<img src="./public/assets/flexBlog.png">
 						</a>
 						<p class="articleDate">April 25, 2018</p>
 					</div>
@@ -241,8 +241,8 @@
 						<p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, libero est debitis vitae ea provident cumque voluptatem
 							eius aliquam vero ducimus aperiam tempore perferendis obcaecati esse consectetur quisquam quam nobis!</p>
 					</div>
-				</div>
-				<div class="articleCard">
+				</article>
+				<article class="articleCard">
 					<div class="articleImg">
 						<a href="https://placeholder.com">
 							<img src="http://via.placeholder.com/370x220">
@@ -254,7 +254,7 @@
 						<p class="articleContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, libero est debitis vitae ea provident cumque voluptatem
 							eius aliquam vero ducimus aperiam tempore perferendis obcaecati esse consectetur quisquam quam nobis!</p>
 					</div>
-				</div>
+				</article>
 			</div>
 		</div>
 	</section>
@@ -271,7 +271,9 @@
 						<p class="sectionSubtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 					</div>
 				</div>
-				<form action="http://www.focuspocus.io/magic/328c8ab775bf3e4ebcc702f29ad4e948" method="POST">
+				
+				<form action="http://www.focuspocus.io/magic/328c8ab775bf3e4ebcc702f29ad4e948" method="POST"
+				 enctype="multipart/form-data">
 					<div class="group">
 						<input type="text" name="name" required>
 						<span class="highlight"></span>
@@ -279,7 +281,7 @@
 						<label>Full name</label>
 					</div>
 					<div class="group">
-						<input type="text" name="email" required>
+						<input type="email" name="email" required>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Email Address</label>
@@ -343,7 +345,7 @@
 			<div class="aboutImgSection">
 				<div class="aboutImgContainer">
 					<img id='colorCircles' src="./public/assets/colorCircles.png" alt="colorful circles">
-					<img id='headshot' src="./public/assets/Polygon.png" alt="picture of sandy tian">
+					<img id='headshot' src="./public/assets/PolygonWithPhoto.png" alt="picture of sandy tian">
 				</div>
 				<div class="aboutName">
 					<p class="name">Sandy Tian</p>
@@ -373,20 +375,7 @@
 	});
 </script>
 
-<script>
 
-	function openSlideMenu() {
-		document.getElementById('side-menu').style.width = '100vw';
-		document.querySelector('nav').style.display = 'none';
-	}
-
-	function closeSlideMenu() {
-		document.getElementById('side-menu').style.width = '0';
-		document.querySelector('nav').style.display = 'flex';
-		document.querySelector('nav').style.justifyContent = 'flex-start';
-		document.querySelector('nav').style.position = 'fixed';
-	}
-</script>
 
 
 </body>

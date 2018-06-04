@@ -129,7 +129,7 @@
 
 .aboutImgSection{
     background: $orange;
-    flex: 1 1 300px;
+    flex: 1 1 250px;
 
     .aboutImgContainer{
         margin: 0 auto;
@@ -257,5 +257,18 @@
     }
 }
 
-
-
+@media(max-width:768px){
+    .aboutImgSection{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contact{
+        .wrapper{
+            width: 100%;
+        }
+        .contactForm{
+            padding: 30px;
+        }
+    }
+}
