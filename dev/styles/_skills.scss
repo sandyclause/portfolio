@@ -25,7 +25,7 @@
     
     .skillRow{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-flow: row wrap;
     }
 
@@ -39,30 +39,34 @@
             border-radius: 10px;
             transition: all 0.5s;
             transform: scale(1.5);
+
+            .skillsTitle{
+                color: $white;
+            }
         }
         
-        &:hover .fa-react{
+        .fa-react{
             color: #892582;
         }
-        &:hover .fa-js{
+        .fa-js{
             color: #f86b18;
         }
-        &:hover .fa-html5{
+        .fa-html5{
             color: #0095c8;
         }
-        &:hover .fa-css3-alt{
+        .fa-css3-alt{
             color: #97ca85;
         }
-        &:hover .fa-code-branch{
+        .fa-code-branch{
             color: #872480;
         }
-        &:hover .fa-github{
+        .fa-github{
             color: #f7bdc6;
         }
-        &:hover .fa-sass{
+        .fa-sass{
             color: #0095c8;
         }
-        &:hover .fa-gulp{
+        .fa-gulp{
             color: #f5b211;
         }
 
@@ -73,6 +77,7 @@
         .skillsTitle{
             font-size: 2rem;
             font-weight: 700;
+            color: $blackBackground;
         }
     }
 }

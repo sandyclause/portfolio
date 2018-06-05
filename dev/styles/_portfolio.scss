@@ -17,6 +17,7 @@
 
     .rightGroup{
         margin-top: 240px;
+        margin-bottom: 490px;
     }
 }
 
@@ -25,9 +26,54 @@
     margin: 60px 0;
     transition: all 0.3s;
     transform: scale(1);
+    border-radius: 10px;
+
+    .workImg{
+        position: relative;
+
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        figcaption{
+            position: absolute;
+            text-align: center;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: none;
+            background-color: $transparentOrange;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            
+
+
+            a{
+                color: $white;
+                margin: 0;
+            }
+
+            p{
+                font-size: 3rem;
+            }
+            .fas{
+                font-size: 5rem;
+            }
+        }
+
+        &:hover{
+
+            figcaption{
+                display: flex;
+            }
+        }
+    }
 
     &:hover{
-        border-radius: 10px;
         transition: all 0.5s;
         transform: scale(1.1);
         box-shadow: 5px 5px 10px $textGray;
@@ -35,15 +81,29 @@
 
     .workDescription{
         position: relative;
-        top: -65px;
         padding: 10px 30px;
         h1{
             font-weight: 700;
             font-size: 3.6rem;
         }
-        p{
-            color: $textGray;
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-flow: row nowrap;
             font-size: 2rem;
+            padding: 0;
+            justify-content: space-around;
+
+            li{
+                margin: 0 10px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $orange;
+                font-weight: bold;
+            }
         }
     }
 }
